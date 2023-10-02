@@ -1,3 +1,21 @@
+libx11 (2:1.7.5-1ubuntu0.3) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: out-of-bounds memory access in _XkbReadKeySyms()
+    - d/p/0001-CVE-2023-43785-out-of-bounds-memory-access-in-_XkbRe.patch
+    - CVE-2023-43785
+  * SECURITY UPDATE: stack exhaustion from infinite recursion in
+    PutSubImage()
+    - d/p/0002-CVE-2023-43786-stack-exhaustion-from-infinite-recurs.patch
+    - d/p/0003-XPutImage-clip-images-to-maximum-height-width-allowe.patch
+    - CVE-2023-43786
+  * SECURITY UPDATE: integer overflow in XCreateImage() leading to a heap
+    overflow
+    - d/p/0004-XCreatePixmap-trigger-BadValue-error-for-out-of-rang.patch
+    - d/p/0005-CVE-2023-43787-Integer-overflow-in-XCreateImage-lead.patch
+    - CVE-2023-43787
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 02 Oct 2023 15:13:58 -0400
+
 libx11 (2:1.7.5-1ubuntu0.2) jammy-security; urgency=medium
 
   * SECURITY UPDATE: multiple buffer overflows
